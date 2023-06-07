@@ -20,6 +20,7 @@ authRouter.post(
           profilePicture: user.profilePicture,
           email: user.email,
           token: generateToken(user),
+          myList: user.myList,
         });
       }
     } else {
@@ -43,6 +44,7 @@ authRouter.post(
       username: user.username,
       email: user.email,
       token: generateToken(user),
+      myList: user.myList,
     });
   })
 );

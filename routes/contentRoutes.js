@@ -75,7 +75,7 @@ contentRouter.get(
   })
 )
 
-contentRouter.get(
+contentRouter.post(
   '/:_id',
     isAuth,
   expressAsyncHandler(async (req, res) => {
